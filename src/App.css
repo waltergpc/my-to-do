@@ -1,38 +1,101 @@
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+
+  background: linear-gradient(90deg,
+  #41295a,
+
+  
+  #2f0743
+  );
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tasklist {
+  background-color: rgba(5, 14, 2, 0.6);
+  width: 70%;
+  margin: 4em auto; 
   color: white;
+  border-radius: 2em;
+  padding: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  margin: 1em 0;
+  width: 100%;
+  align-self: center; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.input {
+  width: 50%;
+  border-radius: 2%;
+  background: transparent; 
+  outline: none; 
+  color: beige; 
+  height: 2em;
+  border: 0.2em solid #0f9b0f;
 }
+
+.submit-button {
+
+  background-color: transparent;
+  height: 2.5em;
+  border: 0.2em solid #0f9b0f;
+  cursor: pointer;
+  color: beige; 
+  font-weight: bold;
+}
+
+.all-todos {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+  margin: 3em;
+}
+
+.flex-items {
+  flex-basis: 30%;
+  font-size: 0.8rem;
+  margin: 1em;
+  border-radius: 1em;
+  justify-content: start;
+}
+
+.flex-items:nth-child(3n + 1) {
+  background: linear-gradient(90deg, 
+  #159957,
+  #155799
+  );
+}
+
+.flex-items:nth-child(3n + 2) {
+  background: linear-gradient(90deg, 
+  #636363,
+  #a2ab58
+  );
+}
+
+.flex-items:nth-child(3n + 3) {
+  background: linear-gradient(90deg, 
+  #4ECDC4,
+  #556270
+  );
+}
+
+.delete-button {
+  cursor: pointer;
+}
+
+.edit-button{
+  cursor:pointer;
+}
+
