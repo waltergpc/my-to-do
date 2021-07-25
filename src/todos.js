@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import TodoDivs from './todo-divs';
 import TodoForm from './Todo-form';
+
+
 
 
 
@@ -14,6 +16,8 @@ const addTodo = (todo) => {
     const newTodos = [...todos, todo];
 
     setTodos(newTodos);
+
+    
     
 
 }
@@ -45,6 +49,8 @@ const updatedTodos = (id, newValue) => {
 }
 
 
+
+
     return (
         <div className= 'tasklist'>
             <h1>Your to do list!</h1>
@@ -53,6 +59,8 @@ const updatedTodos = (id, newValue) => {
             <TodoDivs list={todos} Delete={handleDelete} 
             Completed={toggleComplete} Update={updatedTodos}/>
             </div>
+            
+            
         </div>
 
     )

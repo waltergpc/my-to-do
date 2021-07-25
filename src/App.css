@@ -91,11 +91,24 @@ h1{
   );
 }
 
+.icon-display {
+  display: flex;
+  margin: 0.5em;
+  justify-content: space-evenly;
+}
+
 .delete-button {
   cursor: pointer;
 }
 
 .edit-button{
-  cursor:pointer;
+  cursor: pointer;
+  justify-self: end;
+}
+
+
+
+.detail-div {
+  color: beige;
 }
 
